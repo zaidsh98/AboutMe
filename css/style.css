@@ -1,0 +1,11 @@
+header h1 {
+    text-align: center;
+    background-color: aqua;
+    color: gray;
+}
+main section p {
+    font-size: larger;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: slateblue;
+}
