@@ -47,3 +47,33 @@ switch(born){
         break;
 }
 
+let major = prompt ('Is my major in E-Business ?');
+console.log(major);
+major = major.toLowerCase();
+
+switch(major){
+    case 'yes':
+    case 'y':
+        alert('Thats Correct');
+        break;
+    case 'no':
+    case 'n':
+        alert('Thats Incorrect answer');
+        break;
+}
+
+let job = prompt ('Did I work as an assistant webdeveloper back in 2020 ?');
+console.log(job);
+job = job.toLowerCase();
+
+if (job === 'yes' || job === 'y'){
+    alert('Thats Wrong Answer');
+}
+else if (job === 'no' || job === 'n'){
+    alert('Thats Correct');
+}
+else {
+    alert('You can only answer with yes or no ');
+}
+
+alert ('Thank You ' + userName + " For Your Time I Wish You Have A Great Day");
