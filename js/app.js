@@ -32,3 +32,18 @@ else {
     alert('You can only answer with yes or no ');
 }
 
+let born = prompt ('Was I born in Riyadh ?');
+console.log(born);
+born = born.toLowerCase();
+
+switch(born){
+    case 'yes':
+    case 'y':
+        alert('Thats Correct I was born in Riyadh');
+        break;
+    case 'no':
+    case 'n':
+        alert('Thats Incorrect answer');
+        break;
+}
+
