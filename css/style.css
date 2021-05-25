@@ -3,9 +3,13 @@ header h1 {
     background-color: aqua;
     color: gray;
 }
-main section p {
+main section ul li {
     font-size: larger;
     text-align: center;
     background-color: blanchedalmond;
     color: slateblue;
+}
+footer section ol li {
+    background-color: rgb(132, 35, 161);
+    font-size: larger;
 }

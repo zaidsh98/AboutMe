@@ -1,6 +1,8 @@
 'use strict'
 
-let userName = prompt ('Whats your Name');
+let counter = 0
+
+ let userName = prompt ('Whats your Name');
 console.log(userName);
 alert('Welcome ' + userName);
 
@@ -10,6 +12,7 @@ permission = permission.toLowerCase();
 
 if (permission === 'yes' || permission === 'y'){
     alert('Lets Star');
+    counter++;
 }
 else if (permission === 'no' || permission === 'n'){
     alert('Sorry for disturbing');
@@ -27,6 +30,7 @@ if (myAge === 'yes' || myAge === 'y'){
 }
 else if (myAge === 'no' || myAge === 'n'){
     alert('Thats Correct');
+    counter++;
 }
 else {
     alert('You can only answer with yes or no ');
@@ -40,6 +44,7 @@ switch(born){
     case 'yes':
     case 'y':
         alert('Thats Correct I was born in Riyadh');
+        counter++;
         break;
     case 'no':
     case 'n':
@@ -55,6 +60,7 @@ switch(major){
     case 'yes':
     case 'y':
         alert('Thats Correct');
+        counter++;
         break;
     case 'no':
     case 'n':
@@ -71,9 +77,98 @@ if (job === 'yes' || job === 'y'){
 }
 else if (job === 'no' || job === 'n'){
     alert('Thats Correct');
+    counter++;
 }
 else {
     alert('You can only answer with yes or no ');
 }
 
 alert ('Thank You ' + userName + " For Your Time I Wish You Have A Great Day");
+
+
+
+
+
+let num = 6
+let guessNum = prompt ('Guess A number between 1 to 10 you only have 4 attempts');
+
+for(let i =1; i <= 3; i++){
+ if (guessNum == 6 ){
+        //guessNum = Number(guessNum);
+        console.log(guessNum);
+        alert ('Thats Right');
+        i = 5
+}
+
+else if (guessNum >= 1 && guessNum <= 4){
+    guessNum = prompt('Your guess is low');
+    //guessNum = Number(guessNum);
+}
+else if (guessNum == 5 || guessNum == 7){
+    //guessNum = Number(guessNum);
+    guessNum = prompt('You are so close');
+    //console.log(guessNum);
+    
+}
+else if (guessNum >= 8 && guessNum <= 10){
+    guessNum = prompt ('Your guess is high');
+    //guessNum = Number(guessNum);
+}
+ 
+else{
+    alert('Pick only from 1 to 10');
+    break;
+}
+
+}
+if (guessNum == 6){
+    alert('Thats Right')
+    counter++;
+}
+else{
+    alert('you are out of attempts')
+}
+
+
+
+
+let favColor = ['black' , 'red' , 'blue' , 'green' , 'white' , 'yellow'];
+//console.log(favColor);
+
+let myColor = favColor[0];
+//console.log(myColor);
+
+for(let index = 0; index < favColor.length; index++){
+
+let colorGuess = prompt('Guess what is my favorite color, you only have 6 attempts ?');
+
+if (colorGuess == favColor[0]){
+    alert ('Thats Right')
+    counter++;
+    break;
+}
+else if (colorGuess == favColor[1]){
+    alert('Wrong guess')
+}
+else if (colorGuess == favColor[2]){
+    alert('Wrong guess')
+}
+else if (colorGuess == favColor[3]){
+    alert('Wrong guess')
+}
+else if (colorGuess == favColor[4]){
+    alert('Wrong guess')
+}
+else if (colorGuess == favColor[5]){
+    alert('Wrong guess')
+}
+else {
+    alert ('Only pick colors');
+}
+if (index === 5){
+    alert('you are out of attempts');
+    break;
+}
+}
+
+alert('Your total score out of 7 is '+ counter);
