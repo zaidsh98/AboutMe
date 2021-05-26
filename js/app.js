@@ -6,6 +6,8 @@ let counter = 0
 console.log(userName);
 alert('Welcome ' + userName);
 
+function firstQ() {
+
 let permission = prompt ('I will be asking you some yes/no questions would you like to star ?');
 console.log(permission);
 permission = permission.toLowerCase();
@@ -20,7 +22,8 @@ else if (permission === 'no' || permission === 'n'){
 else {
     alert('You can only answer with yes or no ');
 }
-
+}
+function secondQ() {
 let myAge = prompt ('Am I 25 Years Old ?');
 console.log(myAge);
 myAge = myAge.toLowerCase();
@@ -35,7 +38,8 @@ else if (myAge === 'no' || myAge === 'n'){
 else {
     alert('You can only answer with yes or no ');
 }
-
+}
+function thirdQ() {
 let born = prompt ('Was I born in Riyadh ?');
 console.log(born);
 born = born.toLowerCase();
@@ -51,7 +55,8 @@ switch(born){
         alert('Thats Incorrect answer');
         break;
 }
-
+}
+function fourthQ() {
 let major = prompt ('Is my major in E-Business ?');
 console.log(major);
 major = major.toLowerCase();
@@ -67,7 +72,8 @@ switch(major){
         alert('Thats Incorrect answer');
         break;
 }
-
+}
+function fifthQ() {
 let job = prompt ('Did I work as an assistant webdeveloper back in 2020 ?');
 console.log(job);
 job = job.toLowerCase();
@@ -84,11 +90,11 @@ else {
 }
 
 alert ('Thank You ' + userName + " For Your Time I Wish You Have A Great Day");
+}
 
 
 
-
-
+function sixthQ() {
 let num = 6
 let guessNum = prompt ('Guess A number between 1 to 10 you only have 4 attempts');
 
@@ -121,6 +127,7 @@ else{
 }
 
 }
+
 if (guessNum == 6){
     alert('Thats Right')
     counter++;
@@ -128,9 +135,9 @@ if (guessNum == 6){
 else{
     alert('you are out of attempts')
 }
+}
 
-
-
+function seventhQ() {
 let favColor = ['black' , 'red' , 'blue' , 'green'];
 //console.log(favColor);
 
@@ -150,5 +157,6 @@ if(index === 5){
     alert('You lost. These are my favorite colors ' + favColor);
 }
 }
-
+}
 alert('Your total score out of 7 is '+ counter);
+console.log(firstQ);
