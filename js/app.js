@@ -131,43 +131,22 @@ else{
 
 
 
-
-let favColor = ['black' , 'red' , 'blue' , 'green' , 'white' , 'yellow'];
+let favColor = ['black' , 'red' , 'blue' , 'green'];
 //console.log(favColor);
 
-let myColor = favColor[0];
-//console.log(myColor);
 
-for(let index = 0; index < favColor.length; index++){
+for(let index = 0; index < 6; index++){
 
 let colorGuess = prompt('Guess what is my favorite color, you only have 6 attempts ?');
 
-if (colorGuess == favColor[0]){
-    alert ('Thats Right')
-    counter++;
+for(let z = 0; z < favColor.length; z++){
+    if(colorGuess === favColor[z])
+    alert('Thats a correct Guess');
+    index = 7;
     break;
 }
-else if (colorGuess == favColor[1]){
-    alert('Wrong guess')
-}
-else if (colorGuess == favColor[2]){
-    alert('Wrong guess')
-}
-else if (colorGuess == favColor[3]){
-    alert('Wrong guess')
-}
-else if (colorGuess == favColor[4]){
-    alert('Wrong guess')
-}
-else if (colorGuess == favColor[5]){
-    alert('Wrong guess')
-}
-else {
-    alert ('Only pick colors');
-}
-if (index === 5){
-    alert('you are out of attempts');
-    break;
+if(index === 5){
+    alert('You lost. These are my favorite colors ' + favColor);
 }
 }
 
