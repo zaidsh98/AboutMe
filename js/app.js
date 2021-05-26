@@ -142,6 +142,7 @@ let colorGuess = prompt('Guess what is my favorite color, you only have 6 attemp
 for(let z = 0; z < favColor.length; z++){
     if(colorGuess === favColor[z])
     alert('Thats a correct Guess');
+    counter++;
     index = 7;
     break;
 }
