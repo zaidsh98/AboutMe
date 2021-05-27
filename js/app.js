@@ -22,7 +22,10 @@ else if (permission === 'no' || permission === 'n'){
 else {
     alert('You can only answer with yes or no ');
 }
+
 }
+
+
 function secondQ() {
 let myAge = prompt ('Am I 25 Years Old ?');
 console.log(myAge);
@@ -100,7 +103,7 @@ let guessNum = prompt ('Guess A number between 1 to 10 you only have 4 attempts'
 
 for(let i =1; i <= 3; i++){
  if (guessNum == 6 ){
-        //guessNum = Number(guessNum);
+     
         console.log(guessNum);
         alert ('Thats Right');
         i = 5
@@ -108,17 +111,17 @@ for(let i =1; i <= 3; i++){
 
 else if (guessNum >= 1 && guessNum <= 4){
     guessNum = prompt('Your guess is low');
-    //guessNum = Number(guessNum);
+    
 }
 else if (guessNum == 5 || guessNum == 7){
-    //guessNum = Number(guessNum);
+    
     guessNum = prompt('You are so close');
-    //console.log(guessNum);
+
     
 }
 else if (guessNum >= 8 && guessNum <= 10){
     guessNum = prompt ('Your guess is high');
-    //guessNum = Number(guessNum);
+
 }
  
 else{
@@ -139,7 +142,7 @@ else{
 
 function seventhQ() {
 let favColor = ['black' , 'red' , 'blue' , 'green'];
-//console.log(favColor);
+
 
 
 for(let index = 0; index < 6; index++){
@@ -158,5 +161,15 @@ if(index === 5){
 }
 }
 }
+
+
+firstQ();
+secondQ();
+thirdQ();
+fourthQ();
+fifthQ();
+sixthQ();
+seventhQ();
+
 alert('Your total score out of 7 is '+ counter);
-console.log(firstQ);
+
