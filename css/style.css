@@ -1,7 +1,14 @@
+body{
+    background-color: lightslategrey;
+}
+
 header h1 {
     text-align: center;
     background-color: aqua;
     color: gray;
+}
+section {
+    border-style: solid;
 }
 main section ul li {
     font-size: larger;
@@ -10,6 +17,6 @@ main section ul li {
     color: slateblue;
 }
 footer section ol li {
-    background-color: rgb(132, 35, 161);
+    background-color: rgb(11, 228, 109);
     font-size: larger;
 }
