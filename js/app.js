@@ -132,7 +132,6 @@ else{
 }
 
 if (guessNum == 6){
-    alert('Thats Right')
     counter++;
 }
 else{
@@ -141,23 +140,24 @@ else{
 }
 
 function seventhQ() {
-let favColor = ['black' , 'red' , 'blue' , 'green'];
+let favColor = ['black' , 'red' , 'blue' , 'green', 'purple', 'yellow'];
 
-
+let colorGuess = null;
 
 for(let index = 0; index < 6; index++){
 
-let colorGuess = prompt('Guess what is my favorite color, you only have 6 attempts ?');
+   colorGuess = prompt('Guess what is my favorite color , you only have 6 attempts ?');
 
 for(let z = 0; z < favColor.length; z++){
-    if(colorGuess === favColor[z])
+    if(colorGuess == favColor[0]){
     alert('Thats a correct Guess');
     counter++;
     index = 7;
     break;
+    }
 }
-if(index === 5){
-    alert('You lost. These are my favorite colors ' + favColor);
+if(index === 7){
+    alert('You lost. This is my favorite color ' + favColor[0]);
 }
 }
 }
